@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body{
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+.wrap{
+    width: 1000px;
+    height: 650px;
+    /* background-color: #333; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    width: 200px;
+    height: 100%;
+    background-color: yellow;
+}
+.left h1{
+    padding: 20px 0;
+}
+.left h1 a{}
+.left h1 a img{}
+
+.nav{}
+
+.main{}
+.main>li{
+    position: relative;
+    margin-bottom: 10px;
+}
+.main>li>a{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main>li:hover>a{
+    background-color: white;
+}
+
+.sub{
+    position: absolute;
+    left: 90%;
+    top: 0;
+    width: 80%;
+    display: none;
+    z-index: 50;
+    height: 200px;
+    background-color: skyblue;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: skyblue;
+}
+
+.sub li a:hover{
+    background-color: plum;
+    color: white;
+}
+
+.right{
+    width: 800px;
+    height: 100%;
+    background-color: orange;
+}
+
+.img_slide{
+    width: 800px;
+    height: 350px;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+}
+
+.left_move{
+    position: absolute;
+    width: 2400px;
+    height: 350px;
+}
+.left_move li{
+    float: left;
+    width: 800px;
+    height: 350px;
+}
+.left_move li a{}
+.left_move li a img{}
+
+.contents{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.contents>div{
+    width: 33%;
+    height: 200px;
+}
+
+.contents h2{
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 10px 10px 0 0;
+}
+
+.contents ul{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 170px;
+    border-top: 5px solid #ddd;
+    padding: 5px;
+}
+
+.notice{}
+.notice ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.notice ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.notice ul li a{
+    width: 70%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.notice ul li span{
+    width: 25%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.gallery{}
+.gallery ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery ul li{
+    width: 32%;
+}
+.gallery ul li img{
+    width: 100%;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.gallery ul li img:hover{
+    opacity: 1;
+}
+
+.banner{
+    border: 5px solid #ddd;
+    padding: 5px;
+    height: 200px;
+    background-color: #f1f1f1;
+}
+.banner p{
+    height: 100%;
+    text-align: center;
+}
+.banner p a{
+    display: block;
+    height: 100%;
+}
+.banner p a img{
+    height: 100%;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+.banner p a img:hover{
+    filter: none;
+}
+
+.footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.f_right{
+    width: 600px;
+    height: 100%;
+}
+
+.f_logo{
+    width: 200px;
+    padding-left: 10px;
+}
+
+.f_menu{
+    height: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.f_menu a{
+    padding: 0 5px;
+}
+
+.copy{
+    height: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.pop{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 5px groove goldenrod;
+    padding: 20px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border-bottom: 5px double #ddd;
+    display: none;
+}
+
+.pop p{
+    padding-top: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.pop .close{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
